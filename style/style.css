@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: hsl(30deg, 38%, 92%);
 }
 
 main {
@@ -15,4 +16,82 @@ main {
 main img {
   max-width: 100%;
   display: block;
+}
+main .card-div {
+  padding-inline: 2rem;
+}
+main .card-div .card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .card-div .card .img-div .card-img-desktop {
+  display: none;
+}
+@media (min-width: 35rem) {
+  main .card-div .card .img-div .card-img-desktop {
+    display: block;
+    height: 100%;
+  }
+}
+@media (min-width: 35rem) {
+  main .card-div .card .img-div .card-img-mobile {
+    display: none;
+  }
+}
+main .card-div .card .info-div {
+  padding: 1.6rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+main .card-div .card .info-div .product {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: hsl(228deg, 12%, 48%);
+}
+main .card-div .card .info-div .title {
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  margin-block: 1.3rem;
+}
+main .card-div .card .info-div .text {
+  line-height: 1.7;
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+main .card-div .card .info-div .price {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  display: flex;
+  align-items: center;
+  color: hsl(158deg, 36%, 37%);
+  margin-top: 2.3rem;
+}
+main .card-div .card .info-div .price span {
+  text-decoration: line-through;
+  font-size: 1rem;
+  margin-left: 1.6rem;
+  color: hsl(228deg, 12%, 48%);
+}
+main .card-div .card .info-div .add_to_cart {
+  background-color: hsl(158deg, 36%, 37%);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 1em 2em;
+  border-radius: 8px;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+main .card-div .card .info-div .add_to_cart img {
+  margin-right: 0.7rem;
+}
+@media (min-width: 35rem) {
+  main .card-div .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 40rem;
+  }
 }/*# sourceMappingURL=style.css.map */

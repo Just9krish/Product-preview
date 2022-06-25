@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style/style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
 
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
-  
-  <title>Product preview card component</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <main>
-    <div>
-      <div class="img-div">
-        <img src="./images/image-product-mobile.jpg" alt="">
-        <!-- <img src="./images/image-product-desktop.jpg" alt=""> -->
+    <title>Product preview card component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card-div">
+        <div class="card">
+          <div class="img-div">
+            <img class="card-img-mobile" src="./images/image-product-mobile.jpg" alt="" />
+            <img class="card-img-desktop" src="./images/image-product-desktop.jpg" alt="">
+          </div>
+          <div class="info-div">
+            <p class="product">perfume</p>
+            <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
+            <p class="text">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            <p class="price">$149.99 <span>$169.99</span></p>
+            <a href="#" class="add_to_cart"
+              ><img src="./images/icon-cart.svg" alt="" />Add to Cart</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="info-div">
-        <p>perfume</p>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-          Perfumer-Creator for the House of CHANEL.</p>
-        <p>$149.99 <span>$169.99</span></p>
-        <a href="#"><img src="./images/icon-cart.svg" alt="">add to cart</a>
-      </div>
-    </div>
-  </main>
+    </main>
 
-  <!--
+    <!--
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
+  </body>
 </html>
